@@ -2,7 +2,7 @@
 
 > Level-System, Economy, Games und Moderation — alles über ein modernes Web-Panel verwaltet.
 
-[![Discord](https://img.shields.io/badge/Discord-GameZoneOne-5865F2?logo=discord&logoColor=white)](https://discord.gg/dx2q8wNM9U)
+[![Discord](https://img.shields.io/badge/Discord-GameZoneOne-5865F2?logo=discord&logoColor=white)](https://discord.gg/szBd7ZD5Bq)
 [![Issues](https://img.shields.io/github/issues/OnkelHomie/pampelmulle-public)](https://github.com/OnkelHomie/pampelmulle-public/issues)
 
 ---
@@ -107,7 +107,7 @@ Das Dashboard ist unter **[community.gamezoneone.de](https://community.gamezoneo
 
 ## 🔗 Links
 
-- **Discord:** [discord.gg/dx2q8wNM9U](https://discord.gg/dx2q8wNM9U)
+- **Discord:** [discord.gg/szBd7ZD5Bq](https://discord.gg/szBd7ZD5Bq)
 - **Dashboard:** [community.gamezoneone.de](https://community.gamezoneone.de)
 - **Bug-Reports:** [GitHub Issues](https://github.com/OnkelHomie/pampelmulle-public/issues)
 
@@ -129,4 +129,4 @@ Wenn du ein Issue direkt auf GitHub erstellen möchtest:
 
 ---
 
-*Pampelmulle ist ein privater Discord-Bot von [GameZoneOne](https://discord.gg/dx2q8wNM9U).*
+*Pampelmulle ist ein privater Discord-Bot von [GameZoneOne](https://discord.gg/szBd7ZD5Bq).*
