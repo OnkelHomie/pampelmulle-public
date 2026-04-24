@@ -1,17 +1,37 @@
-name: ✨ Feature-Wunsch
-description: Neue Funktion oder Verbesserung vorschlagen
+name: ✨ Feature-Wunsch / Vorschlag
+description: Neue Funktion, Verbesserung oder Änderung vorschlagen
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Du hast eine Idee für den Bot? Immer her damit!
-        Alternativ: `/bugreport kategorie:Feature-Wunsch ...` direkt im Discord.
+        Du hast eine Idee oder einen Wunsch für den Bot? Immer her damit!
+
+        **Schneller geht's direkt im Discord:**
+        - Schreib im Bug-Kanal: `Feature: [deine Idee]` → wird automatisch als Issue erstellt
+        - Oder: `/bugreport kategorie:Feature-Wunsch titel:... beschreibung:...`
+        - Discord: [discord.gg/szBd7ZD5Bq](https://discord.gg/szBd7ZD5Bq)
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bereich
+      options:
+        - Economy (Coins, Staking, Kredit, Shop)
+        - Spiele (neue Spiele oder Änderungen)
+        - Lotterie / Community-Pott
+        - Level-System / Prestige / Rollen
+        - Moderation / AutoMod
+        - Willkommen-System / Reaction Roles
+        - Web-Dashboard
+        - Allgemein / Sonstiges
+    validations:
+      required: true
 
   - type: textarea
     id: feature
     attributes:
-      label: Was soll der Bot können?
+      label: Was soll der Bot können / wie soll er sich ändern?
       placeholder: Beschreibe deine Idee so konkret wie möglich.
     validations:
       required: true
@@ -19,15 +39,23 @@ body:
   - type: textarea
     id: why
     attributes:
-      label: Warum wäre das nützlich?
-      placeholder: Für wen ist das hilfreich? In welcher Situation würde man das nutzen?
+      label: Warum wäre das nützlich / sinnvoll?
+      placeholder: Für wen ist das hilfreich? Was verbessert sich dadurch?
     validations:
       required: false
 
   - type: textarea
     id: examples
     attributes:
-      label: Beispiele / Vergleichbare Features
-      placeholder: Gibt es ähnliche Funktionen bei anderen Bots die du kennst?
+      label: Beispiele oder Vergleiche
+      placeholder: Gibt es ähnliche Features bei anderen Bots? Hast du ein konkretes Beispiel?
+    validations:
+      required: false
+
+  - type: input
+    id: discord_tag
+    attributes:
+      label: Discord-Name (optional)
+      placeholder: "z.B. MaxMustermann oder deine User-ID"
     validations:
       required: false

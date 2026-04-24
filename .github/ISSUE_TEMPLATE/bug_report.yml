@@ -6,7 +6,11 @@ body:
     attributes:
       value: |
         Danke, dass du dir die Zeit nimmst einen Bug zu melden!
-        Du kannst Bugs auch direkt im Discord melden: `/bugreport kategorie:Bug ...`
+
+        **Schneller geht's direkt im Discord:**
+        - Schreib im Bug-Kanal: `Bugreport: [dein Problem]` → wird automatisch als Issue erstellt
+        - Oder nutze den Slash-Command: `/bugreport kategorie:Bug titel:... beschreibung:...`
+        - Discord: [discord.gg/szBd7ZD5Bq](https://discord.gg/szBd7ZD5Bq)
 
   - type: dropdown
     id: category
@@ -14,12 +18,12 @@ body:
       label: Bereich
       options:
         - Economy (Coins, Staking, Kredit)
-        - Spiele (Blackjack, Slot, Crash, etc.)
+        - Spiele (Blackjack, Slot, Crash, Plinko, High-Low, etc.)
         - Lotterie / Community-Pott
-        - Level-System / XP
-        - Moderation (Warn, Ban, Mute)
-        - AutoMod
-        - Willkommen-System
+        - Level-System / XP / Voice-XP
+        - Moderation (Warn, Ban, Mute, Tempban)
+        - AutoMod / Anti-Spam
+        - Willkommen-System / Reaction Roles
         - Web-Dashboard
         - Sonstiges
     validations:
@@ -29,7 +33,7 @@ body:
     id: command
     attributes:
       label: Betroffener Command
-      placeholder: "z.B. !stake oder /ban"
+      placeholder: "z.B. !stake, /ban oder !blackjack"
     validations:
       required: false
 
@@ -57,5 +61,13 @@ body:
         1. Schreibe '!stake 1000'
         2. Bot antwortet mit ...
         3. Fehler tritt auf
+    validations:
+      required: false
+
+  - type: input
+    id: discord_tag
+    attributes:
+      label: Discord-Name (optional)
+      placeholder: "z.B. MaxMustermann oder deine User-ID"
     validations:
       required: false
