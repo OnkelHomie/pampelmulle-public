@@ -1,0 +1,61 @@
+name: 🐛 Bug-Report
+description: Einen Fehler im Bot melden
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du dir die Zeit nimmst einen Bug zu melden!
+        Du kannst Bugs auch direkt im Discord melden: `/bugreport kategorie:Bug ...`
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Bereich
+      options:
+        - Economy (Coins, Staking, Kredit)
+        - Spiele (Blackjack, Slot, Crash, etc.)
+        - Lotterie / Community-Pott
+        - Level-System / XP
+        - Moderation (Warn, Ban, Mute)
+        - AutoMod
+        - Willkommen-System
+        - Web-Dashboard
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: input
+    id: command
+    attributes:
+      label: Betroffener Command
+      placeholder: "z.B. !stake oder /ban"
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Was ist passiert?
+      placeholder: Beschreibe was du gemacht hast und was schiefgelaufen ist.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Was hast du erwartet?
+      placeholder: Was hätte passieren sollen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Schritte zur Reproduktion
+      placeholder: |
+        1. Schreibe '!stake 1000'
+        2. Bot antwortet mit ...
+        3. Fehler tritt auf
+    validations:
+      required: false

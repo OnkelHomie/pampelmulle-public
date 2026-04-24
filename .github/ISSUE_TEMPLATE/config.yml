@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discord Support
+    url: https://discord.gg/dx2q8wNM9U
+    about: Für schnelle Hilfe tritt unserem Discord bei
+  - name: 🤖 Bug direkt im Discord melden
+    url: https://discord.gg/dx2q8wNM9U
+    about: Nutze /bugreport im Discord — wird automatisch als Issue erstellt

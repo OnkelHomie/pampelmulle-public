@@ -1,0 +1,33 @@
+name: ✨ Feature-Wunsch
+description: Neue Funktion oder Verbesserung vorschlagen
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Du hast eine Idee für den Bot? Immer her damit!
+        Alternativ: `/bugreport kategorie:Feature-Wunsch ...` direkt im Discord.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Was soll der Bot können?
+      placeholder: Beschreibe deine Idee so konkret wie möglich.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Warum wäre das nützlich?
+      placeholder: Für wen ist das hilfreich? In welcher Situation würde man das nutzen?
+    validations:
+      required: false
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Beispiele / Vergleichbare Features
+      placeholder: Gibt es ähnliche Funktionen bei anderen Bots die du kennst?
+    validations:
+      required: false
