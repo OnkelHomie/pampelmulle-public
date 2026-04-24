@@ -4,6 +4,7 @@
 
 [![Discord](https://img.shields.io/badge/Discord-GameZoneOne-5865F2?logo=discord&logoColor=white)](https://discord.gg/szBd7ZD5Bq)
 [![Issues](https://img.shields.io/github/issues/OnkelHomie/pampelmulle-public)](https://github.com/OnkelHomie/pampelmulle-public/issues)
+[![Changelog](https://img.shields.io/badge/Changelog-ansehen-brightgreen)](https://github.com/OnkelHomie/pampelmulle-public/blob/main/CHANGELOG.md)
 
 ---
 
